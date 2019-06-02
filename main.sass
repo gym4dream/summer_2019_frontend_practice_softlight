@@ -1,0 +1,75 @@
+@import "colors"
+@import url('https://rsms.me/inter/inter.css')
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap')
+
+body
+    background-color: $body-bg
+    font-family: Inter, sans-serif
+    h1
+        font-size: 80px
+        font-weight: bold
+        line-height: 1.2
+.main-container
+    margin-top: 24px
+    padding: 0 212px
+    width: 100%
+.main-header
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    .main-header__logo
+        margin-right: 5px
+    .navigation
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .navigation__project-name
+            font-family: Roboto, sans-serif
+            font-size: 14px
+            font-weight: bold
+            line-height: 14px
+            color: $black
+            width: 71px
+        nav
+            width: 450px
+            text-transform: uppercase
+            font-size: 12px
+            font-weight: 600
+            line-height: 24px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            z-index: 1
+            position: relative
+            a
+                color: white
+            a:hover
+                cursor: pointer
+        nav::after
+            content: ""
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            background-color: #ffffff
+            position: absolute
+            top: -3px
+            right: -4px
+.first-main-box
+    .first-main-box__main-header-box
+        width: 706px
+        height: 288px
+        margin: 360px 0 40px
+    .first-main-box__main-header-description
+        width: 521px
+        height: 64px
+        font-size: 24px
+        color: $gray
+        line-height: 1.33
+    .first-main-box__main-pic
+        position: absolute
+        top: 0
+        right: 0
+        width: 1183px
+        height: 1141px
