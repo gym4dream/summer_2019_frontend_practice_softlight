@@ -81,6 +81,7 @@ body
 .second-main-box
     margin-top: 602px
     display: flex
+    height: 335px
     .second-main-box__heading-box
         width: 250px
         height: 48px
@@ -105,4 +106,46 @@ body
         width: 190px
         height: 12px
         margin-left: 48px
+        display: flex
+        position: relative
+        .second-main-box__navigation-arrows-left-box
+            width: 8px
+            height: auto
+            position: absolute
+            top: -5px
+        .second-main-box__navigation-arrows-right-box
+            width: 8px
+            height: auto
+            position: absolute
+            top: -5px
+            right: 0px
+        .second-main-box__navigation-points-box
+            position: absolute
+            left: -8px
+            top: -2px
+            li
+                display: inline-block
+                list-style: none
+            li:first-child::before
+                background: #2A4BFF
+            li::before
+                content: ""
+                margin: 2px
+                width: 10px
+                height: 10px
+                border-radius: 50%
+                background: #979CAA
+                display: inline-block
+.third-main-box
+    height: 1272px
+    .third-main-box__heading
+        margin-bottom: 80px
+    .third-main-box__content-row
+        height: 628px
+        width: 100%
         border: $b
+        display: flex
+        flex-direction: row
+    .third-main-box__content-row__box
+        width: 50%
+        border: $b2
