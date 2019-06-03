@@ -9,11 +9,16 @@ body h1 {
   font-weight: bold;
   line-height: 1.2;
 }
+body h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+}
 
 .main-container {
+  margin: 0 auto;
   margin-top: 24px;
-  padding: 0 212px;
-  width: 100%;
+  width: 1496px;
 }
 
 .main-header {
@@ -68,12 +73,15 @@ body h1 {
   right: -4px;
 }
 
-.first-main-box .first-main-box__main-header-box {
+.first-main-box {
+  height: auto;
+}
+.first-main-box .first-main-box__main-heading-box {
   width: 706px;
   height: 288px;
   margin: 360px 0 40px;
 }
-.first-main-box .first-main-box__main-header-description {
+.first-main-box .first-main-box__main-heading-description {
   width: 521px;
   height: 64px;
   font-size: 24px;
@@ -86,4 +94,38 @@ body h1 {
   right: 0;
   width: 1183px;
   height: 1141px;
+}
+
+.second-main-box {
+  margin-top: 602px;
+  display: flex;
+}
+.second-main-box .second-main-box__heading-box {
+  width: 250px;
+  height: 48px;
+}
+.second-main-box .second-main-box__description {
+  width: 856px;
+  height: 96px;
+  margin-left: 134px;
+  font-size: 24px;
+  line-height: 32px;
+  font-style: italic;
+  position: relative;
+}
+.second-main-box .second-main-box__description-author {
+  position: absolute;
+  bottom: -32px;
+  widows: 280px;
+  height: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  color: #6e6f7a;
+}
+.second-main-box .second-main-box__navigation {
+  width: 190px;
+  height: 12px;
+  margin-left: 48px;
+  border: 1px solid black;
 }
