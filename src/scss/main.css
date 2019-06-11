@@ -1,13 +1,5 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
-
-$b: 1px solid black;
-$black: #0e0f21;
-$blue: #2a4bff;
-$gray: #6e6f7a;
-$gray2: #979CAA;
-
-
 body {
   background-color: #ffffff;
   font-family: Inter, sans-serif;
@@ -19,33 +11,42 @@ body {
   width: 77.9166666666667%;
   height: 5969px;
 }
- 
+
 .general-page-heading {
   font-size: 80px;
   font-weight: bold;
   line-height: 1.2;
-  color: $black;
+  color: #0e0f21;
 }
-  
+
 .page-heading {
   font-size: 40px;
   font-weight: bold;
   line-height: 48px;
-  color: $black;
+  color: #0e0f21;
 }
 
 .page-subheading {
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
-  color: $black;
+  color: #0e0f21;
 }
 
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-logo {
@@ -54,9 +55,15 @@ body {
 
 .navigation-box {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project-name {
@@ -64,7 +71,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   line-height: 14px;
-  color: $black;
+  color: #0e0f21;
   width: 71px;
 }
 
@@ -74,8 +81,12 @@ body {
   font-size: 12px;
   font-weight: 600;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 1;
   position: relative;
   letter-spacing: 1px;
@@ -117,7 +128,7 @@ body {
   width: 521px;
   height: 64px;
   font-size: 24px;
-  color: $gray;
+  color: #6e6f7a;
   line-height: 1.33;
 }
 
@@ -160,7 +171,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
-  color: $gray;
+  color: #6e6f7a;
 }
 
 .testimonials-slider-box {
@@ -192,7 +203,7 @@ body {
   position: absolute;
   left: -8px;
   top: -2px;
-  }
+}
 
 .slider-point {
   display: inline-block;
@@ -205,14 +216,12 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: $gray2;
+  background: #979CAA;
   display: inline-block;
 }
 
-/////////// TODO: Связать через JS поинт с активным слайдера и задать ему цвет.///////
-/////////// Пока нет JS'a - цвет задан первому поинту ////////////////////////////////
 .slider-point:first-child::before {
-  background: $blue;
+  background: #2a4bff;
 }
 
 .modeles-box {
@@ -230,10 +239,9 @@ body {
 }
 
 .modeles {
+  display: -ms-grid;
   display: grid;
-  grid-template:
-  "b b"
-  "b b";
+  grid-template: "b b" "b b";
   grid-column-gap: 40px;
   padding: 0px;
 }
@@ -255,7 +263,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: $gray;
+  color: #6e6f7a;
   margin-top: 16px;
   margin-bottom: 24px;
 }
@@ -264,33 +272,10 @@ body {
   width: 220px;
   height: 48px;
   border-radius: 8px;
-  background-color: $blue;
+  background-color: #2a4bff;
   border: none;
   color: #ffffff;
   padding: 0px;
   margin-bottom: 80px;
 }
-
-
-
-
-
-// .third-main-box__content-row {
-//   height: 628px;
-//   width: 100%;
-//   border: 1px solid black;
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-orient: horizontal;
-//   -webkit-box-direction: normal;
-//   -ms-flex-direction: row;
-//   flex-direction: row;
-// }
-
-// .third-main-box__content-row__box {
-//   width: 50%;
-//   border: 1px solid blue;
-//   margin-bottom: 20px;
-//   padding: 30;
-// }
+/*# sourceMappingURL=main.css.map */

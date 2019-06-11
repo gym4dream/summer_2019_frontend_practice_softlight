@@ -25,6 +25,9 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    stats: 'errors-only'
+  },
   plugins: [ 
     new ExtractTextPlugin({filename: 'style.css'})
   ]

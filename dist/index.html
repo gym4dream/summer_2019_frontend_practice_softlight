@@ -6,90 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Summer 2019 Front-End Course SoftLight</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body>
-    <div class="main-container">
-        <header class="main-header">
-            <div class="main-header__logo">
+    <div class="page-container">
+        <header class="page-header">
+            <div class="page-logo">
                 <img src="/src/images/Logo.png" alt="logo">
             </div>
-            <div class="navigation">
-                <div class="navigation__project-name">
+            <div class="navigation-box">
+                <div class="project-name">
                     <span>PROJECT NAME</span>
                 </div>
-                <nav>
-                    <a href="#">Models</a>
-                    <a href="#">consulting</a>
-                    <a href="#">about</a>
-                    <a href="#">blog</a>
-                    <a href="#"><img src="/src/images/shopping_cart_24px.png" alt="shopping_cart"></a>
+                <nav class="navigation">
+                    <a class="nav-link" href="#">Models</a>
+                    <a class="nav-link" href="#">consulting</a>
+                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link" href="#">blog</a>
+                    <a class="nav-link" href="#"><img src="/src/images/shopping_cart_24px.png" alt="shopping_cart"></a>
                 </nav>
             </div>
         </header>
-        <section class="first-main-box">
-            <div class="first-main-box__main-heading-box">
-                <h1>Excel Models Built by Investors, for Investors</h1>
+        <section class="top-title-box">
+            <div class="general-heading-box">
+                <h1 class="general-page-heading">Excel Models Built by Investors, for Investors</h1>
             </div>
-            <div class="first-main-box__main-heading-description">
+            <div class="general-description">
                 <p>Save time and win more deals with our products and consulting services<p>
             </div>
-            <div class="first-main-box__main-pic">
-                <img src="/src/images/image-6.png" alt="">
+            <div class="general-pic-box">
+                <img src="/src/images/main-pic.png" width="100%" height="100%" alt="Main Picture">
             </div>
         </section>
-        <section class="second-main-box">
-            <div class="second-main-box__heading-box">
-                <h2>Testimonials</h2>
+        <section class="testimonials-box">
+            <div class="testimonials-heading-box">
+                <h2 class="page-heading">Testimonials</h2>
             </div>
-            <div class="second-main-box__description">
+            <div class="testimonials-description">
                 <p>"Absolutely loved. I found it to be very lucidly explained, which helped me revise the basic modelling skills at a great pace. The drawings and quotes were the cherry on top!"</p>
-                <div class="second-main-box__description-author">
+                <div class="testimonials-author">
                     <p><b>Esha Puri,</b> Associate, Deutsche Bank</p>
                 </div>
             </div>
-            <div class="second-main-box__navigation">
+            <div class="testimonials-slider-box">
                 <!-- ******************** ПЕРЕДЕЛАТЬ CSS ЭТОГО БЛОКА (придумать более изящное решение) *************************** -->
                 <!-- **************************************** НАЧАЛО БЛОКА ********************************************************-->
-                <div class="second-main-box__navigation-arrows-left-box">
+                <div class="arrow-left-box">
                     <img src="/src/images/chevron_left_24px.png" alt="Slide left">
                 </div>
-                <div class="second-main-box__navigation-points-box">
+                <div class="slider-points-box">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="slider-point"></li>
+                        <li class="slider-point"></li>
+                        <li class="slider-point"></li>
+                        <li class="slider-point"></li>
+                        <li class="slider-point"></li>
+                        <li class="slider-point"></li>
+                        <li class="slider-point"></li>
                     </ul>
                 </div>
-                <div class="second-main-box__navigation-arrows-right-box">
+                <div class="arrow-right-box">
                     <img src="/src/images/chevron_right_24px.png" alt="Slide right">
                 </div>
                 <!-- ****************************************КОНЕЦ БЛОКА ********************************************************-->
             </div>
         </section>
-        <section class="third-main-box">
-            <div class="third-main-box__heading">
-                <h2>Models</h2>
+        <section class="modeles-box">
+            <div class="modeles-heading-box">
+                <h2 class="page-heading">Models</h2>
             </div>
-            <div class="third-main-box__content-row">
-                <div class="third-main-box__content-row__box">
-                    
-                </div>
-                <div class="third-main-box__content-row__box">
-
-                </div>
-            </div>
-            <div class="third-main-box__content-row">
-                <div class="third-main-box__content-row__box">
-
-                </div>
-                <div class="third-main-box__content-row__box">
-
-                </div>
+            <div class="modeles-content-box">
+                <ul class="modeles">
+                    <li class="model-box">
+                        <div class="model-pic">
+                            <img src="/src/images/modeles1.png" width="100%" height="100%" alt="">
+                        </div>
+                        <h3 class="page-subheading">Standard Acquisition Model</h3>
+                        <p class="model-description">Multifamily Modeling’s basic apartment acquisition model for an existing building. Logical, straightforward, and easy to use, whether you’re new to underwriting or an experienced investor.</p>
+                        <button class="model-bttn">Learn More</button>
+                    </li>
+                    <li class="model-box">
+                        <div class="model-pic">
+                            <img src="/src/images/modeles2.png" width="100%" height="100%" alt="">
+                        </div>
+                        <h3 class="page-subheading">Value-Add/Renovation Model</h3>
+                        <p class="model-description">A sophisticated value-add model that allows users to time individual unit renovations. This model combines granularity with a streamlined experience.</p>
+                        <button class="model-bttn">Learn More</button>
+                    </li>
+                    <li class="model-box">
+                        <div class="model-pic">
+                            <img src="/src/images/modeles3.png" width="100%" height="100%" alt="">
+                        </div>
+                        <h3 class="page-subheading">Condo Development Model</h3>
+                        <p class="model-description">For the ground-up development of a condominium building or complex. Featuring a robust development schedule, allowing users to easily run a number of construction timing scenarios.</p>
+                        <button class="model-bttn">Learn More</button>
+                    </li>
+                    <li class="model-box">
+                        <div class="model-pic">
+                            <img src="/src/images/modeles4.png" width="100%" height="100%" alt="">
+                        </div>
+                        <h3 class="page-subheading">Apartment Development Model</h3>
+                        <p class="model-description">Our flagship development product featuring everything from a Back-of-the-Envelope analysis (allowing developers to get to a quick Yield-on-Cost) to our sophisticated timing and construction schedules.</p>
+                        <button class="model-bttn">Learn More</button>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>
