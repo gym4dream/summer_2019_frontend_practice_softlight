@@ -6,7 +6,26 @@ $black: #0e0f21;
 $blue: #2a4bff;
 $gray: #6e6f7a;
 $gray2: #979CAA;
+$line: #979caa;
 
+@mixin main-bttn {
+  width: 100px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: $blue;
+  border: none;
+  color: #ffffff;
+  padding: 0px;
+  margin-bottom: 80px;
+}
+
+@mixin main-heading {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  color: $black;
+  margin-bottom: 80px;
+}
 
 body {
   background-color: #ffffff;
@@ -27,11 +46,14 @@ body {
   color: $black;
 }
   
-.page-heading {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  color: $black;
+.page-heading-80px-margin-bottom {
+  @include main-heading;
+}
+
+.page-heading-48px-margin-bottom {
+  @include main-heading;
+  margin-bottom: 48px;
+  
 }
 
 .page-subheading {
@@ -39,6 +61,19 @@ body {
   font-weight: bold;
   line-height: 32px;
   color: $black;
+  margin: 32px 0px 16px 0px;
+}
+
+.description-paragraph {
+  display: block;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $gray;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  min-height: 72px;
 }
 
 .page-header {
@@ -137,11 +172,6 @@ body {
   height: 335px;
 }
 
-.testimonials-heading-box {
-  width: 250px;
-  height: 48px;
-}
-
 .testimonials-description {
   width: 856px;
   height: 96px;
@@ -216,12 +246,8 @@ body {
 }
 
 .modeles-box {
-  height: 1272px;
+  height: 1472px;
   width: 100%;
-}
-
-.modeles-heading-box {
-  margin-bottom: 80px;
 }
 
 .modeles-content-box {
@@ -250,47 +276,82 @@ body {
   margin-bottom: 32px;
 }
 
-.model-description {
+.model-bttn {
+  @include main-bttn;
+  width: 220px;
+}
+
+.consulting-box {
+  height: 944px;
+  width: 100%;
+}
+
+.consulting-list {
+  display: flex;
+  padding: 0px;
+  height: 520px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #979caa54;
+}
+
+.consulting-item {
+  display: block;
+  height: 100%;
+  width: 472px;
+}
+
+.consulting-pic {
+  border-radius: 8px;
+  height: 320px;
+  width: 100%;
+}
+
+.signature {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.signature-description {
+  width: 856px;
   font-family: Inter;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: $gray;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  color: $black;
 }
 
-.model-bttn {
-  width: 220px;
-  height: 48px;
-  border-radius: 8px;
-  background-color: $blue;
-  border: none;
-  color: #ffffff;
-  padding: 0px;
-  margin-bottom: 80px;
+.sign-bttn {
+  @include main-bttn;
+  width: 216px;
 }
 
+.what-we-do-box {
+  height: 938px;
+  width: 100%;
+  display: flex;
+}
 
+.what-we-do-pic-wrapper {
+  width: 51.15%;
+}
 
+.what-we-do-content {
+  width: 48.75%;
+  padding-top: 190px;
+  padding-left: 124px;
+}
 
+.what-we-do-pic-pos-absolute {
+position: absolute;
+left: 0px;
+}
 
-// .third-main-box__content-row {
-//   height: 628px;
-//   width: 100%;
-//   border: 1px solid black;
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-orient: horizontal;
-//   -webkit-box-direction: normal;
-//   -ms-flex-direction: row;
-//   flex-direction: row;
-// }
-
-// .third-main-box__content-row__box {
-//   width: 50%;
-//   border: 1px solid blue;
-//   margin-bottom: 20px;
-//   padding: 30;
-// }
+.what-we-do-bttn {
+  @include main-bttn;
+  width: 186px;
+}
