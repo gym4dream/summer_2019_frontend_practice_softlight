@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body>
-    <div class="page-container">
-        <header class="page-header">
-            <div class="page-logo">
-                <img src="/src/images/Logo.png" alt="logo">
-            </div>
-            <div class="navigation-box">
-                <div class="project-name">
-                    <span>PROJECT NAME</span>
-                </div>
+    <header class="page-header">
+        <div class="page-container">
+            <div class="header-content">
+                <a href="#" class="project-main-link">
+                    <div class="project-name-box">
+                        <img src="/src/images/Logo.png" alt="Logo">
+                        <span class="project-name">PROJECT NAME</span>
+                    </div>
+                </a>
                 <nav class="navigation">
                     <a class="nav-link" href="#">Models</a>
                     <a class="nav-link" href="#">consulting</a>
@@ -26,8 +26,10 @@
                     <a class="nav-link" href="#"><img src="/src/images/shopping_cart_24px.png" alt="shopping_cart"></a>
                 </nav>
             </div>
-        </header>
-        <section class="top-title-box">
+        </div>
+    </header>
+    <section class="top-title-box">
+        <div class="page-container">
             <div class="general-heading-box">
                 <h1 class="general-page-heading">Excel Models Built by Investors, for Investors</h1>
             </div>
@@ -37,39 +39,45 @@
             <div class="general-pic-box">
                 <img src="/src/images/main-pic.png" width="100%" height="100%" alt="Main Picture">
             </div>
-        </section>
-        <section class="testimonials-box">
-            <h2 class="page-heading-80px-margin-bottom">Testimonials</h2>
-            <div class="testimonials-description">
-                <p>"Absolutely loved. I found it to be very lucidly explained, which helped me revise the basic modelling skills at a great pace. The drawings and quotes were the cherry on top!"</p>
-                <div class="description-paragraph">
-                    <p><b>Esha Puri,</b> Associate, Deutsche Bank</p>
+        </div>
+    </section>
+    <section class="testimonials-box">
+        <div class="page-container">
+            <div class="flex-parent">
+                <h2 class="page-heading-80px-margin-bottom">Testimonials</h2>
+                <div class="testimonials-description">
+                    <p>"Absolutely loved. I found it to be very lucidly explained, which helped me revise the basic modelling skills at a great pace. The drawings and quotes were the cherry on top!"</p>
+                    <div class="description-paragraph">
+                        <p><b>Esha Puri,</b> Associate, Deutsche Bank</p>
+                    </div>
                 </div>
-            </div>
-            <div class="testimonials-slider-box">
-                <!-- ******************** ПЕРЕДЕЛАТЬ CSS ЭТОГО БЛОКА (придумать более изящное решение) *************************** -->
-                <!-- **************************************** НАЧАЛО БЛОКА ********************************************************-->
-                <div class="arrow-left-box">
-                    <img src="/src/images/chevron_left_24px.png" alt="Slide left">
+                <div class="testimonials-slider-box">
+                    <!-- ******************** ПЕРЕДЕЛАТЬ CSS ЭТОГО БЛОКА (придумать более изящное решение) *************************** -->
+                    <!-- **************************************** НАЧАЛО БЛОКА ********************************************************-->
+                    <div class="arrow-left-box">
+                        <img src="/src/images/chevron_left_24px.png" alt="Slide left">
+                    </div>
+                    <div class="slider-points-box">
+                        <ul>
+                            <li class="slider-point"></li>
+                            <li class="slider-point"></li>
+                            <li class="slider-point"></li>
+                            <li class="slider-point"></li>
+                            <li class="slider-point"></li>
+                            <li class="slider-point"></li>
+                            <li class="slider-point"></li>
+                        </ul>
+                    </div>
+                    <div class="arrow-right-box">
+                        <img src="/src/images/chevron_right_24px.png" alt="Slide right">
+                    </div>
+                    <!-- ****************************************КОНЕЦ БЛОКА ********************************************************-->
                 </div>
-                <div class="slider-points-box">
-                    <ul>
-                        <li class="slider-point"></li>
-                        <li class="slider-point"></li>
-                        <li class="slider-point"></li>
-                        <li class="slider-point"></li>
-                        <li class="slider-point"></li>
-                        <li class="slider-point"></li>
-                        <li class="slider-point"></li>
-                    </ul>
-                </div>
-                <div class="arrow-right-box">
-                    <img src="/src/images/chevron_right_24px.png" alt="Slide right">
-                </div>
-                <!-- ****************************************КОНЕЦ БЛОКА ********************************************************-->
-            </div>
-        </section>
-        <section class="modeles-box">
+            </dv>
+        </div>
+    </section>
+    <section class="modeles-box">
+        <div class="page-container">
             <h2 class="page-heading">Models</h2>
             <div class="modeles-content-box">
                 <ul class="modeles">
@@ -107,8 +115,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="consulting-box">
+        </div>
+    </section>
+    <section class="consulting-box">
+        <div class="page-container">
             <h2 class="page-heading-80px-margin-bottom">Consulting</h2>
             <ul class="consulting-list">
                 <li class="consulting-item">
@@ -137,20 +147,24 @@
                 <p class="signature-description">At Multifamily Modeling, our aim is to provide our clients with high quality and meticulously honed consulting services to help them get to the right answer.</p>
                 <button class="sign-bttn">Learn More</button>
             </div>
-        </section>
-        <section class="what-we-do-box">
-            <div class="what-we-do-pic-wrapper">
-                <div class="what-we-do-pic-pos-absolute">
-                    <img src="/src/images/What_we_do.png" width="984px" height="738px" alt="What we do">
+        </div>
+    </section>
+    <section class="what-we-do-box">
+        <div class="page-container">
+            <div class="flex-parent">
+                <div class="what-we-do-pic-wrapper">
+                    <div class="what-we-do-pic-pos-absolute">
+                        <img src="/src/images/What_we_do.png" width="984px" height="738px" alt="What we do">
+                    </div>
+                </div>
+                <div class="what-we-do-content">
+                    <h2 class="page-heading-48px-margin-bottom">What We Do</h2>
+                    <p class="description-paragraph">We create straightforward, sophisticated, and aesthetically-pleasing financial models designed for the multifamily investment and development community. Our firm also offers consulting services to multifamily investors and developers throughout the US. See our Consulting page to learn more.</p>
+                    <p class="description-paragraph">To us, building financial models is an exercise in problem solving, and we are glad to sweat the details so you don’t have to.</p>
+                    <button class="what-we-do-bttn">Learn More</button>
                 </div>
             </div>
-            <div class="what-we-do-content">
-                <h2 class="page-heading-48px-margin-bottom">What We Do</h2>
-                <p class="description-paragraph">We create straightforward, sophisticated, and aesthetically-pleasing financial models designed for the multifamily investment and development community. Our firm also offers consulting services to multifamily investors and developers throughout the US. See our Consulting page to learn more.</p>
-                <p class="description-paragraph">To us, building financial models is an exercise in problem solving, and we are glad to sweat the details so you don’t have to.</p>
-                <button class="what-we-do-bttn">Learn More</button>
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </body>
 </html>

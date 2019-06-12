@@ -1,5 +1,6 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
 body {
   background-color: #ffffff;
   font-family: Inter, sans-serif;
@@ -7,9 +8,13 @@ body {
 
 .page-container {
   margin: 0 auto;
-  margin-top: 24px;
   width: 77.9166666666667%;
-  height: 5969px;
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .general-page-heading {
@@ -60,23 +65,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 24px;
 }
 
 .page-logo {
   margin-right: 5px;
 }
 
-.navigation-box {
+.header-content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,13 +91,35 @@ body {
           justify-content: space-between;
 }
 
-.project-name {
+.project-main-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-main-link:hover {
+  text-decoration: none;
+}
+
+.project-name-box {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 14px;
   color: #0e0f21;
-  width: 71px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-name {
+  margin-left: 5px;
 }
 
 .navigation {
@@ -139,6 +163,7 @@ body {
 
 .top-title-box {
   height: auto;
+  width: 100%;
 }
 
 .general-heading-box {
@@ -165,9 +190,6 @@ body {
 
 .testimonials-box {
   margin-top: 602px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 335px;
 }
 
@@ -284,6 +306,10 @@ body {
   width: 220px;
 }
 
+.model-bttn:hover {
+  background-color: #001690;
+}
+
 .consulting-box {
   height: 944px;
   width: 100%;
@@ -351,6 +377,10 @@ body {
   width: 216px;
 }
 
+.sign-bttn:hover {
+  background-color: #001690;
+}
+
 .what-we-do-box {
   height: 938px;
   width: 100%;
@@ -384,5 +414,9 @@ body {
   padding: 0px;
   margin-bottom: 80px;
   width: 186px;
+}
+
+.what-we-do-bttn:hover {
+  background-color: #001690;
 }
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,9 @@ $line: #979caa;
   color: #ffffff;
   padding: 0px;
   margin-bottom: 80px;
+  &:hover {
+    background-color: darken($blue, 30);
+  }
 }
 
 @mixin main-heading {
@@ -34,9 +37,11 @@ body {
 
 .page-container {
   margin: 0 auto;
-  margin-top: 24px;
   width: 77.9166666666667%;
-  height: 5969px;
+}
+
+.flex-parent {
+  display: flex;
 }
  
 .general-page-heading {
@@ -78,29 +83,44 @@ body {
 
 .page-header {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 24px;
 }
 
 .page-logo {
   margin-right: 5px;
 }
 
-.navigation-box {
+.header-content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.project-name {
+.project-main-link {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.project-name-box {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 14px;
   color: $black;
-  width: 71px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-name {
+  margin-left: 5px;
 }
 
 .navigation {
@@ -140,6 +160,7 @@ body {
 
 .top-title-box {
   height: auto;
+  width: 100%;
 }
 
 .general-heading-box {
@@ -166,9 +187,6 @@ body {
 
 .testimonials-box {
   margin-top: 602px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 335px;
 }
 
@@ -197,8 +215,6 @@ body {
   width: 190px;
   height: 12px;
   margin-left: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
