@@ -4,7 +4,7 @@ module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'main.js',
   },
   module: {
     rules: [
@@ -12,23 +12,21 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract(
-          {
-            fallback: 'style-loader',
-            use: ['css-loader', 'sass-loader']
-          })
-      }
-    ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        }),
+      },
+    ],
   },
   devServer: {
-    stats: 'errors-only'
+    stats: 'errors-only',
+    contentBase: './dist',
   },
-  plugins: [ 
-    new ExtractTextPlugin({filename: 'style.css'})
-  ]
+  plugins: [new ExtractTextPlugin({ filename: 'style.css' })],
 };
