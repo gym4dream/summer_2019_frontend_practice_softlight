@@ -1,15 +1,15 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+@import url("/node_modules/normalize.css/normalize.css");
 
 $b: 1px solid black;
 $black: #0e0f21;
 $blue: #2a4bff;
 $gray: #6e6f7a;
-$gray2: #979CAA;
+$gray2: #979caa;
 $line: #979caa;
 
-@mixin main-bttn {
-  width: 100px;
+.main-btn {
   height: 48px;
   border-radius: 8px;
   background-color: $blue;
@@ -43,14 +43,14 @@ body {
 .flex-parent {
   display: flex;
 }
- 
+
 .general-page-heading {
   font-size: 80px;
   font-weight: bold;
   line-height: 1.2;
   color: $black;
 }
-  
+
 .page-heading-80px-margin-bottom {
   @include main-heading;
 }
@@ -58,7 +58,6 @@ body {
 .page-heading-48px-margin-bottom {
   @include main-heading;
   margin-bottom: 48px;
-  
 }
 
 .page-subheading {
@@ -238,7 +237,7 @@ body {
   position: absolute;
   left: -8px;
   top: -2px;
-  }
+}
 
 .slider-point {
   display: inline-block;
@@ -274,8 +273,8 @@ body {
 .modeles {
   display: grid;
   grid-template:
-  "b b"
-  "b b";
+    "b b"
+    "b b";
   grid-column-gap: 40px;
   padding: 0px;
 }
@@ -292,9 +291,9 @@ body {
   margin-bottom: 32px;
 }
 
-.model-bttn {
-  @include main-bttn;
-  width: 220px;
+.model-btn {
+  @extend .main-btn;
+  min-width: 220px;
 }
 
 .consulting-box {
@@ -341,8 +340,8 @@ body {
   color: $black;
 }
 
-.sign-bttn {
-  @include main-bttn;
+.sign-btn {
+  @extend .main-btn;
   width: 216px;
 }
 
@@ -363,11 +362,11 @@ body {
 }
 
 .what-we-do-pic-pos-absolute {
-position: absolute;
-left: 0px;
+  position: absolute;
+  left: 0px;
 }
 
-.what-we-do-bttn {
-  @include main-bttn;
+.what-we-do-btn {
+  @extend .main-btn;
   width: 186px;
 }

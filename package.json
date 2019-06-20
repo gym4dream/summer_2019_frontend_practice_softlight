@@ -1,11 +1,11 @@
 {
-  "name": "WP4",
+  "name": "wp4",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "dev": "webpack-dev-server --open --hot --mode development",
+    "dev": "webpack-dev-server --open --hot --mode development --watch",
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -23,6 +23,7 @@
     "webpack-dev-server": "^3.7.1"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "normalize.css": "^8.0.1"
   }
 }

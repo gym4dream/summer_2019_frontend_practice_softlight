@@ -1,0 +1,12 @@
+.main-btn {
+    height: 48px;
+    border-radius: 8px;
+    background-color: $blue;
+    border: none;
+    color: #ffffff;
+    padding: 0px;
+    margin-bottom: 80px;
+    &:hover {
+      background-color: darken($blue, 30);
+    }
+  }

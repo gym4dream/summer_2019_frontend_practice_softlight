@@ -1,5 +1,38 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
+.test {
+  color: #0e0f21;
+}
+
+.main-btn {
+  height: 48px;
+  border-radius: 8px;
+  background-color: $blue;
+  border: none;
+  color: #ffffff;
+  padding: 0px;
+  margin-bottom: 80px;
+  &:hover {
+    background-color: darken($blue, 30);
+  }
+}
+
+$b: 1px solid black;
+$black: #0e0f21;
+$blue: #2a4bff;
+$gray: #6e6f7a;
+$gray2: #979caa;
+$line: #979caa;
+
+@mixin main-heading {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  color: $black;
+  margin-bottom: 80px;
+}
+
 body {
   background-color: #ffffff;
   font-family: Inter, sans-serif;
@@ -11,8 +44,6 @@ body {
 }
 
 .flex-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -20,23 +51,15 @@ body {
   font-size: 80px;
   font-weight: bold;
   line-height: 1.2;
-  color: #0e0f21;
+  color: $black;
 }
 
 .page-heading-80px-margin-bottom {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #0e0f21;
-  margin-bottom: 80px;
+  @include main-heading;
 }
 
 .page-heading-48px-margin-bottom {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #0e0f21;
-  margin-bottom: 80px;
+  @include main-heading;
   margin-bottom: 48px;
 }
 
@@ -44,7 +67,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
-  color: #0e0f21;
+  color: $black;
   margin: 32px 0px 16px 0px;
 }
 
@@ -54,22 +77,16 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #6e6f7a;
+  color: $gray;
   margin-top: 16px;
   margin-bottom: 24px;
   min-height: 72px;
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 24px;
 }
 
@@ -79,24 +96,17 @@ body {
 
 .header-content {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project-main-link {
   text-decoration: none;
   cursor: pointer;
-}
-
-.project-main-link:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .project-name-box {
@@ -104,17 +114,11 @@ body {
   font-size: 14px;
   font-weight: bold;
   line-height: 14px;
-  color: #0e0f21;
+  color: $black;
   width: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project-name {
@@ -127,12 +131,8 @@ body {
   font-size: 12px;
   font-weight: 600;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   z-index: 1;
   position: relative;
   letter-spacing: 1px;
@@ -175,7 +175,7 @@ body {
   width: 521px;
   height: 64px;
   font-size: 24px;
-  color: #6e6f7a;
+  color: $gray;
   line-height: 1.33;
 }
 
@@ -210,15 +210,13 @@ body {
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
-  color: #6e6f7a;
+  color: $gray;
 }
 
 .testimonials-slider-box {
   width: 190px;
   height: 12px;
   margin-left: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -255,12 +253,14 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #979CAA;
+  background: $gray2;
   display: inline-block;
 }
 
+/////////// TODO: Связать через JS поинт с активным слайдера и задать ему цвет.///////
+/////////// Пока нет JS'a - цвет задан первому поинту ////////////////////////////////
 .slider-point:first-child::before {
-  background: #2a4bff;
+  background: $blue;
 }
 
 .modeles-box {
@@ -274,9 +274,10 @@ body {
 }
 
 .modeles {
-  display: -ms-grid;
   display: grid;
-  grid-template: "b b" "b b";
+  grid-template:
+    "b b"
+    "b b";
   grid-column-gap: 40px;
   padding: 0px;
 }
@@ -293,19 +294,9 @@ body {
   margin-bottom: 32px;
 }
 
-.model-bttn {
-  height: 48px;
-  border-radius: 8px;
-  background-color: #2a4bff;
-  border: none;
-  color: #ffffff;
-  padding: 0px;
-  margin-bottom: 80px;
+.model-btn {
+  @extend .main-bttn;
   min-width: 220px;
-}
-
-.model-bttn:hover {
-  background-color: #001690;
 }
 
 .consulting-box {
@@ -314,19 +305,12 @@ body {
 }
 
 .consulting-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0px;
   height: 520px;
   width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid #979caa54;
 }
 
@@ -345,12 +329,8 @@ body {
 .signature {
   height: 48px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 48px;
 }
 
@@ -360,29 +340,17 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: #0e0f21;
+  color: $black;
 }
 
-.sign-bttn {
-  height: 48px;
-  border-radius: 8px;
-  background-color: #2a4bff;
-  border: none;
-  color: #ffffff;
-  padding: 0px;
-  margin-bottom: 80px;
+.sign-btn {
+  @extend .main-bttn;
   width: 216px;
-}
-
-.sign-bttn:hover {
-  background-color: #001690;
 }
 
 .what-we-do-box {
   height: 938px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -401,18 +369,7 @@ body {
   left: 0px;
 }
 
-.what-we-do-bttn {
-  height: 48px;
-  border-radius: 8px;
-  background-color: #2a4bff;
-  border: none;
-  color: #ffffff;
-  padding: 0px;
-  margin-bottom: 80px;
+.what-we-do-btn {
+  @extend .main-btn;
   width: 186px;
 }
-
-.what-we-do-bttn:hover {
-  background-color: #001690;
-}
-/*# sourceMappingURL=main.css.map */
