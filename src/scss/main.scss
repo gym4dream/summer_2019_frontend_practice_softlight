@@ -1,36 +1,8 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
-@import '/node_modules/normalize.css/normalize.css';
+@import 'normalize.css';
 @import '_variables.scss';
 @import '_buttons.scss';
-
-// $b: 1px solid black;
-// $black: #0e0f21;
-// $blue: #2a4bff;
-// $gray: #6e6f7a;
-// $gray2: #979caa;
-// $line: #979caa;
-
-// .main-btn {
-//   height: 48px;
-//   border-radius: 8px;
-//   background-color: $blue;
-//   border: none;
-//   color: #ffffff;
-//   padding: 0px;
-//   margin-bottom: 80px;
-//   &:hover {
-//     background-color: darken($blue, 30);
-//   }
-// }
-
-@mixin main-heading {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  color: $black;
-  margin-bottom: 80px;
-}
 
 body {
   background-color: #ffffff;
@@ -53,12 +25,16 @@ body {
   color: $black;
 }
 
-.page-heading-80px-margin-bottom {
-  @include main-heading;
+.page-heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: $black;
+  margin-bottom: 80px;
 }
 
-.page-heading-48px-margin-bottom {
-  @include main-heading;
+.what-we-do-heading {
+  @extend .page-heading;
   margin-bottom: 48px;
 }
 
