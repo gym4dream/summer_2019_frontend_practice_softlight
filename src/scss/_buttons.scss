@@ -4,9 +4,17 @@
     background-color: $blue;
     border: none;
     color: #ffffff;
-    padding: 0px;
+    padding: 5px;
     margin-bottom: 80px;
     &:hover {
-      background-color: darken($blue, 30);
+      background-color: darken($blue, 20);
+      cursor: pointer;
+      transition: 200ms;
+    }
+    &:active {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
     }
   }
