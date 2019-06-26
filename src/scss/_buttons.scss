@@ -6,10 +6,10 @@
     color: #ffffff;
     padding: 5px;
     margin-bottom: 80px;
+    transition: 200ms;
     &:hover {
       background-color: darken($blue, 20);
       cursor: pointer;
-      transition: 200ms;
     }
     &:active {
       outline: none;
