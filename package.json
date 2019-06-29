@@ -1,7 +1,7 @@
 {
   "name": "wp4",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "blog.js",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --open 'Google Chrome' --mode development",
@@ -23,7 +23,6 @@
     "webpack-dev-server": "^3.7.1"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "normalize.css": "^8.0.1"
   }
 }

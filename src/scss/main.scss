@@ -4,6 +4,12 @@
 @import '_variables.scss';
 @import '_buttons.scss';
 
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: Inter, sans-serif;
@@ -487,7 +493,6 @@ body {
   margin-top: 200px;
   background-color: $black;
   height: 200px;
-  width: 100%;
 }
 
 .footer-flex-parent {
@@ -516,12 +521,13 @@ body {
 .footer-navigation-box {
   display: flex;
   flex-direction: column;
+  min-width: 468px;
 }
 
 .footer-nav-box {
   display: flex;
   justify-content: space-between;
-  min-width: 448px;
+  font-size: 12px;
 }
 
 .footer-nav-link {
@@ -538,11 +544,12 @@ body {
 
 .footer-contacts {
   display: flex;
-  max-width: 430px;
-  padding-left: 28px;
+  align-self: flex-end;
+  min-width: 430px;
   justify-content: space-between;
   color: #ffffff;
   font-size: 14px;
+  font-weight: 200;
 }
 
 .footer-adress {
