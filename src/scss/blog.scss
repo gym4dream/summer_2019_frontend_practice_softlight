@@ -6,7 +6,21 @@
 @import 'main.scss';
 
 body {
-  background-color: #e0e0e0; 
+  background-color: #f5f5f7; 
+}
+
+.page-subheading {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.description-paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  line-height: 1.5
 }
 
 .desktop-hidden {
@@ -23,7 +37,6 @@ body {
 .mobile-menu {
   display: none;
 }
-
 
 .mobile-shop-card-box {
   display: none;
@@ -49,6 +62,115 @@ body {
   border: 8px solid $blue;
 }
 
+.main-box {
+  width: 100%;
+  height: auto;
+}
+
+.main-heading-box {
+  font-size: 40px;
+}
+
+.head-and-search-flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+}
+
+.search-box {
+  height: 56px;
+  max-width: 1112px;
+  width: 57.9166666666667%;
+}
+
+.search-form {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blog-search {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding-left: 64px; 
+}
+
+.search-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 100%;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  padding-top: 5px;
+  transition: 200ms;
+  &:hover {
+    background: #e9e9e9;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.blog-articles-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.blog-articles-item {
+  display: block;
+  background: #ffffff;
+  width: 31.5508021390374%;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  max-height: 432px;
+}
+
+.blog-articles-link {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  transition: 200ms;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.16);
+  }
+}
+
+.blog-articles-img-box {
+  width: 100%;
+  height: 272px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.blog-articles-img {
+  width: 100%;
+  height: 100%;
+}
+
+.articles-description-box {
+  width: 100%;
+  padding: 24px;
+}
+
 
 
 // ___________________________________________________________________ //
@@ -56,15 +178,21 @@ body {
 // ___________________ MEDIA QUERIES STARTS BELOW ____________________ //
 // ___________________________________________________________________ //
 
-
+// _________________________               ___________________________ //
+// _________________________ MOBILE PHONES ___________________________ //
+// ___________________________________________________________________ //
 
 @media screen and (max-width: 767px) {
-  // ********** HEADER SETTINGS STARTS HERE ********** //
+  // _________________ HEADER SETTINGS STARTS HERE ___________________ //
   .page-container {
     padding: 0 16px;
   }
   .page-header {
     height: 56px;
+  }
+  .page-header-margin-bottom {
+    height: 56px; //              THIS CLASS NEEDS FOR      DO NOT       //
+    margin-bottom: 240px; //     CORRECT JS ANIMATON       REMOVE :)     //
   }
   .nav-link {
     display: none;
@@ -157,10 +285,41 @@ body {
       color: $blue;
     }
   }
-  // ********** HEADER SETTINGS ENDS HERE ********** //
+  // _________________ HEADER SETTINGS ENDS HERE ___________________ //
 
 
-  // ********** FOOTER SETTINGS STARTS HERE ********** //
+  // _______________ MAIN PAGE SETTINGS STARTS HERE ________________ //
+  .head-and-search-flex-parent {
+    flex-direction: column;
+    align-content: space-between;
+    padding: 0px;
+    margin: 24px 0;
+  }
+  .main-heading-box {
+    font-size: 32px;
+  }
+  .search-box {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .blog-articles-link {
+    height: auto;
+  }
+  .blog-articles-item {
+    width: 100%;
+    height: auto;
+  }
+  .articles-description-box {
+    height: auto;
+  }
+  .blog-articles-img-box {
+    width: 100%;
+    height: auto;
+  }
+  // ________________ MAIN PAGE SETTINGS ENDS HERE _________________ //
+
+
+  // ________________ FOOTER SETTINGS STARTS HERE __________________ //
   .page-footer {
     height: 352px;
     padding-top: 56px;
@@ -208,5 +367,60 @@ body {
   .footer-telephone {
     justify-content: flex-start;
   }
-  // ********** FOOTER SETTINGS ENDS HERE ********** //
+  // _________________ FOOTER SETTINGS ENDS HERE ___________________ //
+}
+
+
+// ______________________________         ____________________________ //
+// ______________________________ TABLETS ____________________________ //
+// ___________________________________________________________________ //
+
+@media screen and (min-width: 768px), screen and (max-width: 1119px) {
+
+// __________________ HEADER SETTINGS STARTS HERE ____________________ //
+  .mobile-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .head-and-search-flex-parent {
+    flex-direction: row;
+    margin: 80px 0;
+  }
+  .search-box {
+    width: 61.1764705882353%;
+    margin: 0px;
+  }
+// ___________________ HEADER SETTINGS ENDS HERE _____________________ //
+
+// _________________ MAIN PAGE SETTINGS STARTS HERE __________________ //
+  .blog-articles-item {
+    width: 48.2352941176471%;
+  }
+  .blog-articles-img-box {
+    max-height: 410px;
+  }
+// __________________ MAIN PAGE SETTINGS ENDS HERE ___________________ //
+
+// __________________ FOOTER SETTINGS STARTS HERE ____________________ //
+// ___________________ FOOTER SETTINGS ENDS HERE _____________________ //
+}
+
+// ___________________________          ______________________________ //
+// ___________________________ DESKTOPS ______________________________ //
+// ___________________________________________________________________ //
+
+@media screen and (min-width: 1120px) {
+// __________________ HEADER SETTINGS STARTS HERE ____________________ //
+// ___________________ HEADER SETTINGS ENDS HERE _____________________ //
+
+// _________________ MAIN PAGE SETTINGS STARTS HERE __________________ //
+  .blog-articles-item {
+    width: 31.4285714285714%;
+  }
+// __________________ MAIN PAGE SETTINGS ENDS HERE ___________________ //
+
+// __________________ FOOTER SETTINGS STARTS HERE ____________________ //
+// ___________________ FOOTER SETTINGS ENDS HERE _____________________ //
 }
