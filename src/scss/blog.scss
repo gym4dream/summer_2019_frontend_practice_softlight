@@ -302,11 +302,12 @@ body {
     margin-top: 24px;
     width: 100%;
   }
-  .blog-articles-link {
-    height: auto;
-  }
   .blog-articles-item {
     width: 100%;
+    height: auto;
+    max-height: 570px;
+  }
+  .blog-articles-link {
     height: auto;
   }
   .articles-description-box {
@@ -386,7 +387,7 @@ body {
   }
   .head-and-search-flex-parent {
     flex-direction: row;
-    margin: 80px 0;
+    margin: 80px 0px 87px;
   }
   .search-box {
     width: 61.1764705882353%;
@@ -413,6 +414,9 @@ body {
 
 @media screen and (min-width: 1120px) {
 // __________________ HEADER SETTINGS STARTS HERE ____________________ //
+  .head-and-search-flex-parent {
+    margin: 80px 0px 84px 0px;
+  }
 // ___________________ HEADER SETTINGS ENDS HERE _____________________ //
 
 // _________________ MAIN PAGE SETTINGS STARTS HERE __________________ //
