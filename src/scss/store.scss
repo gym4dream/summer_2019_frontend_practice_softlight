@@ -1,0 +1,66 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+@import 'normalize.css';
+@import '_variables.scss';
+@import '_buttons.scss';
+@import 'main.scss';
+@import 'blog.scss';
+
+
+.blog-articles-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  min-height: 330px;
+}
+
+.store-item-heading-box {
+  width: 100%;
+  min-height: 51px;
+}
+
+.store-item-heading {
+  margin: 13px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: $black;
+}
+
+.store-item-main-content {
+  min-height: 217px;
+  border-top: 2px solid $gray2;
+  border-bottom: 2px solid $gray2;
+}
+
+.store-item-img-box {
+  width: 100%;
+  height: 120px;
+  margin-top: 24px;
+  margin-bottom: 29px;
+}
+
+.store-item-img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+
+.store-goods-name {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $gray;
+  font-weight: 400;
+  text-align: center;
+}
+
+.store-item-price {
+  margin: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: $black;
+}
