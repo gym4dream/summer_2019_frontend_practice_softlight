@@ -1,205 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="img/me_favicon.png" />
-  <link rel="stylesheet" href="blog.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-  <title>Summer 2019 Front-End Course SoftLight</title>
-</head>
-<body>
-  <header class="page-header">
-    <div class="page-container">
-      <div class="header-content">
-        <!-- MOBILE HEADER MENU STARTS HERE -->
-        <div class="mobile-menu animated rotateIn">
-          <ul class="mobile-menu-burger">
-            <li class="burger-item"></li>
-            <li class="burger-item"></li>
-            <li class="burger-item"></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer 2019 Front-End Course SoftLight</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/me_favicon.png" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-container">
+        <div class="header-content">
+          <a href="#" class="project-main-link">
+            <div class="project-name-box">
+              <img src="img/logo_header.png" alt="Logo" width="40px" height="40px">
+              <span class="project-name">PROJECT NAME</span>
+            </div>
+          </a>
+          <nav class="navigation">
+            <a class="nav-link" href="#">Models</a>
+            <a class="nav-link" href="#">consulting</a>
+            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#">blog</a>
+            <a class="nav-link shopping-cart" href="#">
+              <img src="img/shopping_cart_24px.png" alt="Shopping cart" width="100%" height="100%" />
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="title-box">
+      <div class="page-container">
+        <div class="title-wrapper">
+          <div class="general-heading-box">
+            <h1 class="general-page-heading">
+              Excel Models Built by Investors, for Investors
+            </h1>
+            <div class="general-description">
+              <p>
+                Save time and win more deals with our products and consulting
+                services
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="general-pic-box">
+          <img
+            class="general-picture"
+            src="img/main-pic.png"
+            width="100%"
+            height="100%"
+            alt="Main Picture"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-box">
+      <div class="page-container">
+        <div class="flex-parent">
+          <h2 class="page-heading">Testimonials</h2>
+          <div class="testimonials-description">
+            <p>
+              "Absolutely loved. I found it to be very lucidly explained, which
+              helped me revise the basic modelling skills at a great pace. The
+              drawings and quotes were the cherry on top!"
+            </p>
+            <div class="description-paragraph">
+              <p><b>Esha Puri,</b> Associate, Deutsche Bank</p>
+            </div>
+          </div>
+          <div class="testimonials-slider-box">
+            <!-- ******************** ПЕРЕДЕЛАТЬ CSS ЭТОГО БЛОКА (придумать более изящное решение) *************************** -->
+            <!-- **************************************** НАЧАЛО БЛОКА ********************************************************-->
+            <div class="arrow-left-box">
+              <img src="img/chevron_left_24px.png" alt="Slide left" />
+            </div>
+            <div class="slider-points-box">
+              <ul>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+                <li class="slider-point"></li>
+              </ul>
+            </div>
+            <div class="arrow-right-box">
+              <img src="img/chevron_right_24px.png" alt="Slide right" />
+            </div>
+            <!-- ****************************************КОНЕЦ БЛОКА ********************************************************-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modeles-box">
+      <div class="page-container">
+        <h2 class="page-heading">Models</h2>
+        <div class="modeles-content-box">
+          <ul class="modeles">
+            <li class="model-box">
+              <div class="model-pic">
+                <img
+                  src="img/modeles1.png"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <h3 class="page-subheading">Standard Acquisition Model</h3>
+              <p class="description-paragraph">
+                Multifamily Modeling’s basic apartment acquisition model for an
+                existing building. Logical, straightforward, and easy to use,
+                whether you’re new to underwriting or an experienced investor.
+              </p>
+              <button class="model-btn">Learn More</button>
+            </li>
+            <li class="model-box">
+              <div class="model-pic">
+                <img
+                  src="img/modeles2.png"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <h3 class="page-subheading">Value-Add/Renovation Model</h3>
+              <p class="description-paragraph">
+                A sophisticated value-add model that allows users to time
+                individual unit renovations. This model combines granularity
+                with a streamlined experience.
+              </p>
+              <button class="model-btn">Learn More</button>
+            </li>
+            <li class="model-box">
+              <div class="model-pic">
+                <img
+                  src="img/modeles3.png"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <h3 class="page-subheading">Condo Development Model</h3>
+              <p class="description-paragraph">
+                For the ground-up development of a condominium building or
+                complex. Featuring a robust development schedule, allowing users
+                to easily run a number of construction timing scenarios.
+              </p>
+              <button class="model-btn">Learn More</button>
+            </li>
+            <li class="model-box">
+              <div class="model-pic">
+                <img
+                  src="img/modeles4.png"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
+              </div>
+              <h3 class="page-subheading">Apartment Development Model</h3>
+              <p class="description-paragraph">
+                Our flagship development product featuring everything from a
+                Back-of-the-Envelope analysis (allowing developers to get to a
+                quick Yield-on-Cost) to our sophisticated timing and
+                construction schedules.
+              </p>
+              <button class="model-btn">Learn More</button>
+            </li>
           </ul>
         </div>
-        <nav class="desktop-hidden mobile-hidden" id="mobileMenuList">
-          <a class="mobile-nav-link" href="#">Models</a>
-          <a class="mobile-nav-link" href="#">consulting</a>
-          <a class="mobile-nav-link" href="#">about</a>
-          <a class="mobile-nav-link" href="#">blog</a>
-        </nav>
-        <!-- MOBILE HEADER MENU ENDS HERE -->
-        <a href="#" class="project-main-link">
-          <div class="project-name-box">
-            <img src="img/logo_header.png" alt="Logo" width="40px" height="40px">
-            <span class="project-name mobile-hidden">PROJECT NAME</span>
-          </div>
-        </a>
-        <nav class="navigation mobile-hidden">
-          <a class="nav-link" href="#">Models</a>
-          <a class="nav-link" href="#">consulting</a>
-          <a class="nav-link" href="#">about</a>
-          <a class="nav-link" href="#">blog</a>
-          <a class="nav-link shopping-cart" href="#">
-            <img src="img/shopping_cart_24px_black.png" alt="Shopping cart" width="100%" height="100%" />
-          </a>
-        </nav>
-        <!-- MOBILE HEADER SHOPPING CARD STARTS HERE -->
-        <div class="mobile-shop-card-box">
-          <img class="mobile-shop-card" src="img/shopping_cart_24px_black.png" alt="Shopping cart" width="100%" height="100%" />
-        </div>
-        <!-- MOBILE HEADER SHOPPING CARD ENDS HERE -->
       </div>
-    </div>
-  </header>
-  <section class="main-box">
-    <div class="page-container">
-      <div class="head-and-search-flex-parent">
-        <div class="main-heading-box">
-          <h2 class="page-heading">Articles</h2>
-        </div>
-        <div class="search-box">
-          <form method="GET" action="" class="search-form">
-            <input type="search" placeholder="Search" name="Search" class="blog-search" id="blogSearch">
-            <button type="submit" class="search-button">
-              <img src="img/search_24px.png" alt="search" width="24px" height="24px">
-            </button>
-          </form>
+    </section>
+    <section class="consulting-box">
+      <div class="page-container">
+        <h2 class="page-heading">Consulting</h2>
+        <ul class="consulting-list">
+          <li class="consulting-item">
+            <div class="consulting-pic">
+              <img src="img/cons1.png" width="100%" height="100%" alt="" />
+            </div>
+            <h3 class="page-subheading">Custom Models</h3>
+            <p class="description-paragraph">
+              Not all models look the same. Need something you don’t see here?
+              We’ll build it for you.
+            </p>
+          </li>
+          <li class="consulting-item">
+            <div class="consulting-pic">
+              <img src="img/cons2.png" width="100%" height="100%" alt="" />
+            </div>
+            <h3 class="page-subheading">Model Audits</h3>
+            <p class="description-paragraph">
+              Sometimes models just need a little love. We review spreadsheets
+              on behalf of our clients in order to verify formulas and improve
+              functionality.
+            </p>
+          </li>
+          <li class="consulting-item">
+            <div class="consulting-pic">
+              <img src="img/cons3.png" width="100%" height="100%" alt="" />
+            </div>
+            <h3 class="page-subheading">Acqusitions Analysis</h3>
+            <p class="description-paragraph">
+              Do you run lean without the capital to invest in a full-time
+              Acquisition Analyst? Don’t worry, we’ve got you covered.
+            </p>
+          </li>
+        </ul>
+        <div class="signature">
+          <p class="signature-description">
+            At Multifamily Modeling, our aim is to provide our clients with high
+            quality and meticulously honed consulting services to help them get
+            to the right answer.
+          </p>
+          <button class="sign-btn">Learn More</button>
         </div>
       </div>
-      <ul class="blog-articles-list">
-        <li class="blog-articles-item">
-          <a href="#" class="blog-articles-link">
-            <div class="store-item-heading-box">
-              <h3 class="store-item-heading">Recommend</h3>
+    </section>
+    <section class="what-we-do-box">
+      <div class="page-container">
+        <div class="flex-parent flex-align-center">
+          <div class="what-we-do-pic-wrapper">
+            <div class="what-we-do-pic-pos-absolute">
+              <img
+                src="img/What_we_do.png"
+                width="100%"
+                height="100%"
+                alt="What we do"
+              />
             </div>
-            <div class="store-item-main-content">
-              <div class="store-item-img-box">
-                <img class="store-item-img" src="img/store-telephone.png" alt="">
-              </div>
-              <p class="store-goods-name">Asus ZenFone Go ZB452KG</p>
-            </div>
-            <div class="store-item-price-box">
-              <h3 class="store-item-price">$ 384.4</h3>
-            </div>
-          </a>
-        </li>
-        <li class="blog-articles-item">
-          <a href="#" class="blog-articles-link">
-            <div class="store-item-heading-box">
-              <h3 class="store-item-heading">Bestseller</h3>
-            </div>
-            <div class="store-item-main-content">
-              <div class="store-item-img-box">
-                <img class="store-item-img" src="img/store-miband.png" alt="">
-              </div>
-              <p class="store-goods-name">Xiaomi Mi Band 2</p>
-            </div>
-            <div class="store-item-price-box">
-              <h3 class="store-item-price">$ 384.4</h3>
-            </div>
-          </a>
-        </li>
-        <li class="blog-articles-item">
-          <a href="#" class="blog-articles-link">
-            <div class="store-item-heading-box">
-              <h3 class="store-item-heading">Goods of the week</h3>
-            </div>
-            <div class="store-item-main-content">
-              <div class="store-item-img-box">
-                <img class="store-item-img" src="img/store-tv.png" alt="">
-              </div>
-              <p class="store-goods-name">LG 43UH610V</p>
-            </div>
-            <div class="store-item-price-box">
-              <h3 class="store-item-price">over $ 9k</h3>
-            </div>
-          </a>
-        </li>
-        <li class="blog-articles-item">
-          <a href="#" class="blog-articles-link">
-            <div class="store-item-heading-box">
-              <h3 class="store-item-heading">Recommend</h3>
-            </div>
-            <div class="store-item-main-content">
-              <div class="store-item-img-box">
-                <img class="store-item-img" src="img/store-wtf.png" alt="">
-              </div>
-              <p class="store-goods-name">Electrolux EZB 52410 AK</p>
-            </div>
-            <div class="store-item-price-box">
-              <h3 class="store-item-price">$ 384.4</h3>
-            </div>
-          </a>
-        </li>
-        <li class="blog-articles-item">
-          <a href="#" class="blog-articles-link">
-            <div class="store-item-heading-box">
-              <h3 class="store-item-heading">Bestseller</h3>
-            </div>
-            <div class="store-item-main-content">
-              <div class="store-item-img-box">
-                <img class="store-item-img" src="img/store-earphones.png" alt="">
-              </div>
-              <p class="store-goods-name">Beats studio wireless</p>
-            </div>
-            <div class="store-item-price-box">
-              <h3 class="store-item-price">$ 384.4</h3>
-            </div>
-          </a>
-        </li>
-        <li class="blog-articles-item">
-          <a href="#" class="blog-articles-link">
-            <div class="store-item-heading-box">
-              <h3 class="store-item-heading">Recommend</h3>
-            </div>
-            <div class="store-item-main-content">
-              <div class="store-item-img-box">
-                <img class="store-item-img" src="img/store-nikon.png" alt="">
-              </div>
-              <p class="store-goods-name">Nikon D3300 Kit</p>
-            </div>
-            <div class="store-item-price-box">
-              <h3 class="store-item-price">$ 384.4</h3>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <footer class="page-footer">
-    <div class="page-container">
-      <div class="footer-flex-parent">
-        <a href="#" class="project-main-link">
-          <div class="footer-logo-box">
-            <div class="footer-logo"></div>
-            <span>PROJECT NAME</span>
           </div>
-        </a>
-        <div class="footer-navigation-box">
-          <nav class="footer-nav-box">
-            <a class="footer-nav-link" href="#">MODELES</a>
-            <a class="footer-nav-link" href="#">CONSULTING</a>
-            <a class="footer-nav-link" href="#">ABOUT</a>
-            <a class="footer-nav-link" href="#">BLOG</a>
-            <a class="footer-nav-link" href="#">LEGAL</a>
-          </nav>
-          <div class="footer-contacts">
-            <div class="footer-adress">
-              <div class="place-icon-box">
-                <img src="img/place_24px.png" alt="Place" width="100%" height="100%">
-              </div>
-              <p>P.O. Box XXXX, Fairfield, CT 06815</p>
+          <div class="what-we-do-content">
+            <h2 class="what-we-do-heading">What We Do</h2>
+            <p class="description-paragraph">
+              We create straightforward, sophisticated, and
+              aesthetically-pleasing financial models designed for the
+              multifamily investment and development community. Our firm also
+              offers consulting services to multifamily investors and developers
+              throughout the US. See our Consulting page to learn more.
+            </p>
+            <p class="description-paragraph">
+              To us, building financial models is an exercise in problem
+              solving, and we are glad to sweat the details so you don’t have
+              to.
+            </p>
+            <button class="what-we-do-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="articles-box">
+      <div class="page-container">
+        <h2 class="page-heading">Articles</h2>
+          <ul class="articles-list">
+            <li class="articles-item">
+              <a class="articles-link" href="#">
+                <div class="article-pic-box">
+                  <img src="img/Articles1.png" width="100%" height="100%" alt="Article Picture">
+                </div>
+                <div class="article-heading-box">
+                  <p class="articles-heading">Multifamily Ground-Up <br> Development Model</p>
+                </div>
+                <div class="article-description-box">
+                  <p class="description-paragraph">The Development Models will appeal to developers both small and large. Meaning, 
+                      a small 2-3 person shop to a private equity firm.</p>
+                </div>
+              </a>
+            </li>
+            <li class="articles-item">
+              <a class="articles-link" href="#">
+                <div class="article-pic-box">
+                  <img src="img/Articles2.png" width="100%" height="100%" alt="Article Picture">
+                </div>
+                <div class="article-heading-box">
+                  <p class="articles-heading">Multifamily Ground-Up <br> Development Model</p>
+                </div>
+                <div class="article-description-box">
+                  <p class="description-paragraph">The Development Models will appeal to developers both small and large. Meaning, 
+                      a small 2-3 person shop to a private equity firm.</p>
+                </div>
+              </a>
+            </li>
+            <li class="articles-item">
+              <a class="articles-link" href="#">
+                <div class="article-pic-box">
+                  <img src="img/Articles3.png" width="100%" height="100%" alt="Article Picture">
+                </div>
+                <div class="article-heading-box">
+                  <p class="articles-heading">Multifamily Ground-Up <br> Development Model</p>
+                </div>
+                <div class="article-description-box">
+                  <p class="description-paragraph">The Development Models will appeal to developers both small and large. Meaning, 
+                    a small 2-3 person shop to a private equity firm.</p>
+                </div>
+              </a>
+            </li>
+            <li class="articles-arrow-item">
+              <a class="articles-link" href="#">
+                <div class="articles-arrow-box">
+                  <img src="img/arrow_forward_24px.png" width="48px" height="48px" alt="Article Picture">
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-container">
+        <div class="footer-flex-parent">
+          <a href="#" class="project-main-link">
+            <div class="footer-logo-box">
+              <img class="footer-logo-img" src="img/logo_footer.png" width="70px" height="70px" alt="Logo">
+              <span>PROJECT NAME</span>
             </div>
-            <div class="footer-telephone">
-              <div class="telephone-icon-box">
-                <img src="img/phone_24px.png" alt="Telephone" width="100%" height="100%">
+          </a>
+          <div class="footer-navigation-box">
+            <nav class="footer-nav-box">
+              <a class="footer-nav-link" href="#">MODELES</a>
+              <a class="footer-nav-link" href="#">CONSULTING</a>
+              <a class="footer-nav-link" href="#">ABOUT</a>
+              <a class="footer-nav-link" href="#">BLOG</a>
+              <a class="footer-nav-link" href="#">LEGAL</a>
+            </nav>
+            <div class="footer-contacts">
+              <div class="footer-adress">
+                <div class="place-icon-box">
+                  <img src="img/place_24px.png" alt="Place" width="100%" height="100%">
+                </div>
+                <p>P.O. Box XXXX, Fairfield, CT 06815</p>
               </div>
-              <p>(203) xxx-5555</p>
+              <div class="footer-telephone">
+                <div class="telephone-icon-box">
+                  <img src="img/phone_24px.png" alt="Telephone" width="100%" height="100%">
+                </div>
+                <p>(203) xxx-5555</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="store.js"></script>
-</body>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
