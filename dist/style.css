@@ -488,8 +488,23 @@ body {
   position: relative;
   width: 24px;
   height: 24px; }
-
-.shopping-cart::after {
+.shoppind-cart-counter-box{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #2a4bff;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+.shoppind-cart-counter {
+  display: block;
+  padding: 0px;
+  line-height: 1.4em;
+}
+/* .shopping-cart::after {
   content: '2';
   text-align: center;
   position: absolute;
@@ -500,7 +515,7 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   top: -3px;
-  right: -3px; }
+  right: -3px; } */
 
 .title-box {
   height: 1141px;

@@ -61,7 +61,6 @@
   function(e, t) {},
 ]);
 
-const root = document.getElementById('reactRoot');
 const spinner = document.getElementById('Spinner');
 const store = document.getElementById('reactRoot');
 
@@ -82,21 +81,21 @@ const createStoreItems = function(arr) {
     items =
       items +
       `<li class="blog-articles-item" id=${item.id}>
-                    <a href="#" class="blog-articles-link">
-                      <div class="store-item-heading-box">
-                        <h3 class="store-item-heading">${item.status}</h3>
-                      </div>
-                      <div class="store-item-main-content">
-                        <div class="store-item-img-box">
-                          <img class="store-item-img" src=${item.image} alt="">
-                        </div>
-                        <p class="store-goods-name">${item.name}</p>
-                      </div>
-                      <div class="store-item-price-box">
-                        <h3 class="store-item-price">${item.price}</h3>
-                      </div>
-                    </a>
-                  </li>`;
+        <a href="#" class="blog-articles-link">
+          <div class="store-item-heading-box">
+            <h3 class="store-item-heading">${item.status}</h3>
+          </div>
+          <div class="store-item-main-content">
+            <div class="store-item-img-box">
+              <img class="store-item-img" src=${item.image} alt="">
+            </div>
+            <p class="store-goods-name">${item.name}</p>
+          </div>
+          <div class="store-item-price-box">
+            <h3 class="store-item-price">${item.price}</h3>
+          </div>
+        </a>
+      </li>`;
   });
   return items;
 };
@@ -164,5 +163,22 @@ window.onscroll = () => {
   }
 };
 
+let ShoppingCart = () => {
+  let products = JSON.parse(localStorage.getItem("Shopping_Cart"));
+  return (
+    <div>
+      <a className="nav-link shopping-cart" href="checkout.html">
+        <img src="img/shopping_cart_24px_black.png" alt="Shopping cart" width="100%" height="100%" />
+        <div className="shoppind-cart-counter-box">
+          <span className="shoppind-cart-counter">{products.length}</span>
+        </div>
+      </a>
+    </div>
+  )
+}
 
 
+ReactDOM.render(
+  <ShoppingCart />,
+  document.getElementById('shopping_cart_root')
+);
