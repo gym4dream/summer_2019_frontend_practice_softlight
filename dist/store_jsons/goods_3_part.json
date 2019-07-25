@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Apple iPhone XI",
+    "id": "iPhoneXI",
+    "price": "over 9000",
+    "status": "Recommend",
+    "image": "img/store-iphone11.png"
+  },
+  {
+    "name": "Apple Watch Series 3",
+    "id": "iWatch3",
+    "price": "$ 399",
+    "status": "Bestseller",
+    "image": "img/store-apple-watch3.png"
+  },
+  {
+    "name": "Apple TV",
+    "id": "AppleTV",
+    "price": "$ 59",
+    "status": "Good Of The Week",
+    "image": "img/store-appleTV.png"
+  },
+  {
+    "name": "INDESIT ITW A 51051 G",
+    "id": "IndesitITW",
+    "price": "$ 299,99",
+    "status": "Recommend",
+    "image": "img/store-IndesitITW.png"
+  },
+  {
+    "name": "AKG K 550",
+    "id": "AKGK550",
+    "price": "$ 180",
+    "status": "Bestseller",
+    "image": "img/store-akg-k550.png"
+  },
+  {
+    "name": "Canon 5D",
+    "id": "CanonPhoto",
+    "price": "$ 2.799,00",
+    "status": "Recommend",
+    "image": "img/store-canon5d.png"
+  }
+]

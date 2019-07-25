@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Apple iPhone X",
+    "id": "iPhoneX",
+    "price": "$ 999",
+    "status": "Bestseller",
+    "image": "img/store-iphone-x.png"
+  },
+  {
+    "name": "Xiaomi Mi Band 4",
+    "id": "MiBand4",
+    "price": "$ 39,99",
+    "status": "Recommend",
+    "image": "img/store-miband-4.png"
+  },
+  {
+    "name": "Samsung Q90R 4K Smart QLED TV 2019",
+    "id": "SamsungTV",
+    "price": "$ 2.499,99",
+    "status": "Recommend",
+    "image": "img/store-samsung-qled.png"
+  },
+  {
+    "name": "Electrolux Intuit SurroundCook",
+    "id": "ElectroluxIntuit",
+    "price": "$ 699,99",
+    "status": "Good Of The Week",
+    "image": "img/store-electrolux-intuit.png"
+  },
+  {
+    "name": "Apple AirPods",
+    "id": "AirPods",
+    "price": "$ 159",
+    "status": "Good Of The Week",
+    "image": "img/store-airpods.png"
+  },
+  {
+    "name": "Sony Alpha A7",
+    "id": "SonyA7",
+    "price": "$ 799,99",
+    "status": "Bestseller",
+    "image": "img/store-sony-a7.png"
+  }
+]

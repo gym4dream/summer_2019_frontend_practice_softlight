@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Asus ZenFone Go ZB452KG",
+    "id": "ZenFone",
+    "price": "$ 130",
+    "status": "Recommend",
+    "image": "img/store-telephone.png"
+  },
+  {
+    "name": "Xiaomi Mi Band 2",
+    "id": "MiBand2",
+    "price": "$ 19,49",
+    "status": "Bestseller",
+    "image": "img/store-miband.png"
+  },
+  {
+    "name": "LG 43UH610V",
+    "id": "LGTV",
+    "price": "$ 40.899,00",
+    "status": "Good Of The Week",
+    "image": "img/store-tv.png"
+  },
+  {
+    "name": "Electrolux EZB 52410 AK",
+    "id": "ElectroluxEZB",
+    "price": "$ 499,00",
+    "status": "Recommend",
+    "image": "img/store-wtf.png"
+  },
+  {
+    "name": "Beats studio wireless",
+    "id": "BeatsEarphones",
+    "price": "$ 249,99",
+    "status": "Bestseller",
+    "image": "img/store-earphones.png"
+  },
+  {
+    "name": "Nikon D3300 Kit",
+    "id": "NikonPhoto",
+    "price": "$ 379,99",
+    "status": "Recommend",
+    "image": "img/store-nikon.png"
+  }
+]
