@@ -108,6 +108,13 @@ const renderStoreItems = function(products) {
 const handler = e => {
   e.preventDefault();
   console.log(e.currentTarget.id);
+  let shopCartArray = [];
+  let shopCartString = localStorage.getItem("Shopping_Cart");
+  if (shopCartString) {
+    shopCartArray = JSON.parse(shopCartString);
+  }
+  shopCartArray.push(e.currentTarget.id);
+  localStorage.setItem("Shopping_Cart", JSON.stringify(shopCartArray));
 };
 
 const loadProducts = pageNumber => {
@@ -156,3 +163,6 @@ window.onscroll = () => {
     loadProducts(currentPage + 1);
   }
 };
+
+
+
