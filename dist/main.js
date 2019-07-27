@@ -72,7 +72,7 @@ function stopSpinner() {
   return spinner.classList.add('loaded');
 }
 
-let pageIsLoad = false;
+let pageIsLoaded = false;
 let currentPage;
 
 const createStoreItems = function(arr) {
@@ -117,7 +117,8 @@ const handler = e => {
 };
 
 const loadProducts = pageNumber => {
-  pageIsLoad = true;
+  if (currentPage == 3) return;
+  pageIsLoaded = true;
   runSpinner();
   setTimeout(() => {
     fetch(`store_jsons/goods_${pageNumber}_part.json`)
@@ -130,7 +131,7 @@ const loadProducts = pageNumber => {
           item.addEventListener('click', handler);
         });
         stopSpinner();
-        pageIsLoad = false;
+        pageIsLoaded = false;
         currentPage = pageNumber;
       });
   }, 1000);
@@ -141,7 +142,7 @@ window.onload = () => {
 };
 
 window.onscroll = () => {
-  if (pageIsLoad) {
+  if (pageIsLoaded) {
     return;
   }
   const browserHeight = Math.max(

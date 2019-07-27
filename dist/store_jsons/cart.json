@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Asus ZenFone Go ZB452KG",
+    "id": "ZenFone",
+    "price": "$ 130",
+    "status": "Recommend",
+    "image": "img/store-telephone.png"
+  },
+  {
+    "name": "Xiaomi Mi Band 2",
+    "id": "MiBand2",
+    "price": "$ 19,49",
+    "status": "Bestseller",
+    "image": "img/store-miband.png"
+  },
+  {
+    "name": "LG 43UH610V",
+    "id": "LGTV",
+    "price": "$ 40.899,00",
+    "status": "Good Of The Week",
+    "image": "img/store-tv.png"
+  },
+  {
+    "name": "Electrolux EZB 52410 AK",
+    "id": "ElectroluxEZB",
+    "price": "$ 499,00",
+    "status": "Recommend",
+    "image": "img/store-wtf.png"
+  },
+  {
+    "name": "Beats studio wireless",
+    "id": "BeatsEarphones",
+    "price": "$ 249,99",
+    "status": "Bestseller",
+    "image": "img/store-earphones.png"
+  },
+  {
+    "name": "Nikon D3300 Kit",
+    "id": "NikonPhoto",
+    "price": "$ 379,99",
+    "status": "Recommend",
+    "image": "img/store-nikon.png"
+  },
+  {
+    "name": "Apple iPhone X",
+    "id": "iPhoneX",
+    "price": "$ 999",
+    "status": "Bestseller",
+    "image": "img/store-iphone-x.png"
+  },
+  {
+    "name": "Xiaomi Mi Band 4",
+    "id": "MiBand4",
+    "price": "$ 39,99",
+    "status": "Recommend",
+    "image": "img/store-miband-4.png"
+  },
+  {
+    "name": "Samsung Q90R 4K Smart QLED TV 2019",
+    "id": "SamsungTV",
+    "price": "$ 2.499,99",
+    "status": "Recommend",
+    "image": "img/store-samsung-qled.png"
+  },
+  {
+    "name": "Electrolux Intuit SurroundCook",
+    "id": "ElectroluxIntuit",
+    "price": "$ 699,99",
+    "status": "Good Of The Week",
+    "image": "img/store-electrolux-intuit.png"
+  },
+  {
+    "name": "Apple AirPods",
+    "id": "AirPods",
+    "price": "$ 159",
+    "status": "Good Of The Week",
+    "image": "img/store-airpods.png"
+  },
+  {
+    "name": "Sony Alpha A7",
+    "id": "SonyA7",
+    "price": "$ 799,99",
+    "status": "Bestseller",
+    "image": "img/store-sony-a7.png"
+  },
+  {
+    "name": "Apple iPhone XI",
+    "id": "iPhoneXI",
+    "price": "over 9000",
+    "status": "Recommend",
+    "image": "img/store-iphone11.png"
+  },
+  {
+    "name": "Apple Watch Series 3",
+    "id": "iWatch3",
+    "price": "$ 399",
+    "status": "Bestseller",
+    "image": "img/store-apple-watch3.png"
+  },
+  {
+    "name": "Apple TV",
+    "id": "AppleTV",
+    "price": "$ 59",
+    "status": "Good Of The Week",
+    "image": "img/store-appleTV.png"
+  },
+  {
+    "name": "INDESIT ITW A 51051 G",
+    "id": "IndesitITW",
+    "price": "$ 299,99",
+    "status": "Recommend",
+    "image": "img/store-IndesitITW.png"
+  },
+  {
+    "name": "AKG K 550",
+    "id": "AKGK550",
+    "price": "$ 180",
+    "status": "Bestseller",
+    "image": "img/store-akg-k550.png"
+  },
+  {
+    "name": "Canon 5D",
+    "id": "CanonPhoto",
+    "price": "$ 2.799,00",
+    "status": "Recommend",
+    "image": "img/store-canon5d.png"
+  }
+]

@@ -1262,3 +1262,7 @@ body {
     outline: none; }
   .pay-btn:hover {
     background: #469142; }
+.react-wrapper {
+  margin: 0px;
+  padding: 0px;
+}
