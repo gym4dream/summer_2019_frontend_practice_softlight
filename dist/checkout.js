@@ -266,4 +266,7 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, reactRoot);
+ReactDOM.render(
+  <App />,
+  reactRoot
+);
